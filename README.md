@@ -119,6 +119,7 @@ Supported arguments are below.
 * beforeLaunch `string`: You can specify a file containing code to run once configs are read but before any environment setup. This will only run once, and before onPrepare.
 * onPrepare `string`: You can specify a file containing code to run once protractor is ready and available, and before the specs are executed. If multiple capabilities are being run, this will run once per capability.
 * webDriverProxy `string`: WebDriver proxy configuration to run remote tests
+* grep `string`: Grep string used to match the specs to run. EX. `#tag` or `#tag|#tag2`
 
 #### options.output
 Type: `String`

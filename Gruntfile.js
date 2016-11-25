@@ -96,6 +96,21 @@ module.exports = function(grunt) {
           }
         }
       },
+      testArgsList: {
+        configFile:"test/testConf.js",
+        options: {
+          webdriverManagerUpdate: true,
+          args: {
+            grep: '#mytag'
+          }
+        }
+      },
+      testWithoutArgsList: {
+        configFile:"test/testConf.js",
+        options: {
+          webdriverManagerUpdate: true
+        }
+      }
     },
 
     // Unit tests.
